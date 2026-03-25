@@ -1,0 +1,36 @@
+{
+"Project_Contents":[
+    {
+        "Title":"Personal Portfolio (This Project)",
+        "Description":"Test 1",
+        "Image":"Assets/Personal_Portfolio.png",
+        "ImageAlt":"My Personal Portfolio Website"
+    },
+    {
+        "Title":"E-Learning Platform",
+        "Description":"Test 2",
+        "Image":"Assets/KaleidoLearn_dboard.png",
+        "ImageAlt":"KaleidoLearn"
+    },
+    {
+        "Title":"Naughty Or Nice",
+        "Description":"Test 3",
+        "Image":"Assets/NaughtyorNice_Landing.png",
+        "ImageAlt":"Naughty Or Nice Quiz Game"
+    },
+    {
+        "Title":"Bistrovanti Restaurant",
+        "Description":"Test 4",
+        "Image":"Assets/Bistrovanti.png",
+        "ImageAlt":"Bistrovanti"
+    },
+    {
+        "Title":"MediVault",
+        "Description":"Test 5",
+        "Image":"Assets/MediVault.png",
+        "ImageAlt":"Medivault"
+
+    }
+
+]
+}
