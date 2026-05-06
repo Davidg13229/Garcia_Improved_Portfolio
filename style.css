@@ -1,0 +1,105 @@
+.section-title{
+
+}
+
+.custom-title   p, .job-title {
+    font-family: 'Verdana', sans-serif;
+    padding-bottom: 3px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out;
+    transition-duration: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-13px);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+}
+
+.card-title {
+    font-family: 'georgia', sans-serif;
+}
+
+.card-text { 
+    padding: 10px 3px ;
+    font-family: 'Verdana', sans-serif;
+    text-align: justify;
+    font-size: 15px;
+
+}
+
+.custom-pills, .custom-pills-vault, .custom-pills-learn {
+    font-family: 'Verdana', sans-serif;
+}
+
+.custom-pills span:nth-child(1) {
+   background-color: #FF5F15 !important;
+   padding: 5px 10px;
+   font-size: 12px;
+   color:
+}
+.custom-pills span:nth-child(2) {
+   background-color: #64de4 !important;
+   padding: 5px 15px;
+   font-size: 12px;
+}
+.custom-pills span:nth-child(3) {
+   background-color: #F0DB4F !important;
+   padding: 5px 10px;
+   font-size: 12px;
+   color: #323330;
+}
+.custom-pills span:nth-child(4) {
+   background-color: #6f42c1 !important;
+   padding: 5px 10px;
+   font-size: 12px;
+}
+
+/* Custom Pills for Medi-Vault */
+.custom-pills-vault span:nth-child(1) {
+   background-color: #FF5F15 !important;
+   padding: 5px 10px;
+   font-size: 12px;
+}
+.custom-pills-vault span:nth-child(2) {
+   background-color: #64de4 !important;
+   padding: 5px 15px;
+   font-size: 12px;
+}
+.custom-pills-vault span:nth-child(3) {
+   background-color: #F0DB4F !important;
+   padding: 5px 10px;
+   font-size: 12px;
+   color: #323330;
+}
+.custom-pills-vault span:nth-child(4) {
+   background-color: #00758F !important;
+   padding: 5px 10px;
+   font-size: 12px;
+}
+
+/* Custom Pills for E-Learning Platform */
+.custom-pills-learn span:nth-child(1) {
+   background-color: #FF2D20 !important;
+   padding: 5px 10px;
+   font-size: 12px;
+   color:
+}
+.custom-pills-learn span:nth-child(2) {
+   background-color: #64de4 !important;
+   padding: 5px 15px;
+   font-size: 12px;
+}
+.custom-pills-learn span:nth-child(3) {
+   background-color: #FF2D20 !important;
+   padding: 5px 10px;
+   font-size: 12px;
+}
+.custom-pills-learn span:nth-child(4) {
+   background-color: #00758F !important;
+   padding: 5px 10px;
+   font-size: 12px;
+}
