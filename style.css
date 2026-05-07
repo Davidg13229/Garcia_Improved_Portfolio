@@ -1,5 +1,31 @@
-.section-title{
+html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+}
+    
+#Intro{
+      padding: 65px 0 65px 0;
+}
 
+section {
+      padding: 35px 0 0 0 ;
+}
+
+.section-title{
+   text-align: center;
+   padding: 30px 0 30px 0;
+
+}
+
+.welcome-section {
+   padding: 30px;
+
+
+}
+
+.welcome-section h3 {
+   font-family: 'Courier New', Courier, monospace;
+   margin-bottom: 15px;
 }
 
 .custom-title   p, .job-title {
@@ -7,15 +33,23 @@
     padding-bottom: 3px;
 }
 
+.custom-list li:nth-child(1)::marker {
+   font-size: 3rem;
+}
+.custom-list li:not(:first-child)::marker {
+   font-size: 1.5rem;
+}
+
+
 .card {
     border: none;
     border-radius: 10px;
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
     transition-duration: 0.4s;
 }
 
 .card:hover {
-    transform: translateY(-13px);
+    transform: translateY(-15px);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
 }
 
@@ -28,7 +62,36 @@
     font-family: 'Verdana', sans-serif;
     text-align: justify;
     font-size: 15px;
+}
+.custom-resume-button {
+   font-family: 'Verdana', sans-serif;
+   padding: 15px;
+   background-color: rgb(0, 0, 0) !important;
+   color: rgb(255, 255, 255) !important;
+   border-color: black !important;
+   margin: 20px 0 0 0;
+   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
 
+.custom-resume-button:hover {
+   background-color:  rgb(247, 247, 247) !important;
+   color: rgb(0, 0, 0) !important;
+   border-color: rgb(54, 51, 51) !important;
+}
+
+.custom-button .btn{
+   font-family: 'Verdana', sans-serif;
+   padding: 15px;
+   background-color: white !important;
+   color: black !important;
+   border-color: black !important;
+   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.custom-button .btn:hover {
+   background-color:  rgb(54, 51, 51) !important;
+   color: white !important;
+   border-color: rgb(54, 51, 51) !important;
 }
 
 .custom-pills, .custom-pills-vault, .custom-pills-learn {
@@ -39,7 +102,7 @@
    background-color: #FF5F15 !important;
    padding: 5px 10px;
    font-size: 12px;
-   color:
+   color: #f1f1f1;
 }
 .custom-pills span:nth-child(2) {
    background-color: #64de4 !important;

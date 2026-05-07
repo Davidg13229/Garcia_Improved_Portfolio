@@ -14,13 +14,7 @@
     <title>David Garcia - Personal Portfolio </title>
 
     <style>
-    html {
-      scroll-behavior: smooth;
-      scroll-padding-top: 80px;
-    }
-    section {
-      padding: 35px 0;
-    }
+
     </style>
 
   </head>
@@ -31,8 +25,8 @@
       <nav
         class="navbar navbar-expand-md bg-body-tertiary fixed-top border-bottom  ">
         <div class="container-xxl">
-          <a href="#Intro" class="navbar-brand mt-1  fw-bold">
-            About Me
+          <a href="#Intro" class="navbar-brand mt-1  fw-bold" title="View About Section">
+            About
           </a>
           <!-- Hamburger Button To be Inserted-->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -50,13 +44,13 @@
               <li class="nav-item fw-bold">
                 <!--To be Updated Ang Resume -->
                 <a class="nav-link "
-                  href="#Experience">
+                  href="#Experience" title="View Experience Section">
                   Experience
                 </a>
               </li>
               <li class="nav-item fw-bold">
                 <a class="nav-link"
-                  href="#Projects">Projects</a>
+                  href="#Projects" title="View Projects Section">Projects</a>
               </li>
             </ul>
           </div>
@@ -65,33 +59,17 @@
             class="collapse navbar-collapse justify-content-end align-center"
             id="navBar">
             <ul class="navbar-nav my-2 mb-lg-0">
-              <li class="nav-item fw-bold d-md-none">
-                <!--To be Updated Ang Resume -->
-                <a class="nav-link"
-                  href="#"
-                  target="_blank">
-                  Resume
-                </a>
-              </li>
-              <li class="nav-item fw-bold ms-2 d-none d-md-inline">
-                <!--To be Updated Ang Resume -->
-                <a class="btn btn-light border border-secondary"
-                  href="#"
-                  target="_blank">
-                  Resume
-                </a>
-              </li>
               <li class="nav-item fw-bold">
                 <!--To be inserted Gmail Icon from bootstrap-->
-                <a class="nav-link" href="#">Email</a>
+                <a class="nav-link" href="mailto:davidg13229@gmail.com" title="Send An Email" >Email</a>
               </li>
               <li class="nav-item fw-bold">
                 <!--To be inserted LinkedIn Icon from bootstrap-->
-                <a class="nav-link" href="#">LinkedIn</a>
+                <a class="nav-link" href="https://www.linkedin.com/in/david-garcia-5a954b254" title="Go to LinkedIn Profile"target="_blank">LinkedIn</a>
               </li>
               <li class="nav-item fw-bold">
                 <!--To be inserted Github Icon from bootstrap-->
-                <a class="nav-link" href="#">Github</a>
+                <a class="nav-link" href="https://github.com/davidg13229" title="Go to Github Profile" target="_blank">Github</a>
               </li>
             </ul>
           </div>
@@ -99,12 +77,12 @@
       </nav>
 
       <!-- Welcome Section -->
-      <section id="Intro" style="background-color:bisque;">
+      <section id="Intro">
         <div class="container mt-5 ">
           <div class="row justify-content-start">
             <div class="col-md-7 text-center text-md-start">
               <h3>
-                <div class="display-6 "> Hello There Visitor #<span id="visits"></span>,
+                <div class="display-6 "> Hello There Visitor #<span id="visits"></span>
                   <!--CounterAPI to be inserted here-->
                 </div>
               </h3>
@@ -112,12 +90,13 @@
                 <div class="display-2 fw-bold"> I'm <em>David Garcia</em>!
                 </div>
               </h1>
-              <p class="lead mt-3">
+              <p class="lead mt-3 about-description">
                 A 4th year Computer Science student at the
                 Polytechnic University of the Philippines learning Web
                 Development. I wish to develop awesome websites &
                 applications.
               </p>
+              <a href="Assets/Garcia_Resume.docx" download class="btn btn-primary custom-resume-button">Download Resume</a>
             </div>
             <div class="col-md-4  text-center d-none d-md-block">
               <img src="Assets/Me 2.jpg" class="img-fluid rounded-circle"
@@ -129,7 +108,7 @@
         <!--Insert Border Line Before Next Section-->
 
         <!--Work/Internships Section-->
-        <section id="Experience" style="background-color: beige;">
+        <section id="Experience">
           <div class="container my-5">
             <div class="row text-center text-md-start">
               <div class="col-12">
@@ -138,7 +117,7 @@
               </div>
             </div>
             <div class="row text-center text-md-start lh-lg custom-title">
-              <div class="col-12">
+              <div class="col-12 custom-list">
                 <!-- To be inserted Cerebro Logo as well as their linkedin?-->
                 <ul>
                   <li>
@@ -146,20 +125,24 @@
                       Intern |
                       Cerebro, Manila | July 2025 - September 2025
                     </div>
-                    <ul>
                       <li>
-                        <p class="mx-1">Lorem ipsum dolor sit amet
-                          consectetur adipisicing elit. Dolorem libero at
-                          inventore hic eius voluptatem ad ipsa veritatis
-                          deserunt ducimus!</p>
+                        <p class="mx-1">Assisted in managing student, teacher, and parent accounts by 
+                          performing account creation, updates, and troubleshooting for user-related 
+                          issues and data inconsistencies within Cerebro's academic management 
+                          system.</p>
                       </li>
                       <li>
-                        <p class="mx-1">Lorem ipsum dolor sit amet
-                          consectetur adipisicing elit. In consequatur
-                          laudantium beatae voluptates, suscipit reprehenderit
-                          quia veritatis debitis? Vel, molestias!</p>
+                        <p class="mx-1">Managed student account records, study load assignments, and 
+                          parent account generation for multiple partner schools.</p>
                       </li>
-                    </ul>
+                        <li>
+                        <p class="mx-1">Supported LMS operations by organizing course content and helping 
+                          resolve issues involving corrupted simulation courses within Cerebro’s Moodle platform.</p>
+                      </li>
+                        <li>
+                        <p class="mx-1">Completed Moodle Administration and Moodle Developer certification 
+                          programs to strengthen knowledge in LMS management and operations.</p>
+                      </li>
                   </li>
                 </ul>
               </div>
@@ -172,10 +155,10 @@
         <!-- To be Added Hover Effects on Each Individual Card that either Zooms In/Out or Expands Content-->
         <section id="Projects" class="bg-s ">
           <div class="container mb-3">
-            <div
-              class="display-5 text-start fw-bold mb-4 section-title">
-              <em>Projects</em>
-            </div>
+              <div class="col-12">
+                <h2 class="display-5 fw-bold mb-4 section-title"> <em> Projects
+                    </em></h2>
+              </div>
             <div class="row row-cols-1 row-cols-md-2 g-4">
               <div class="col">
                 <div class="card h-100">
@@ -190,11 +173,11 @@
                         <span class="badge rounded-pill bg-primary "> JavaScript</span>
                         <span class="badge rounded-pill bg-primary"> Bootstrap 5</span>  
                       </div>
-                    <p class="card-text">A responsive website I built using only HTML and Bootstrap 5. My main intention is 
+                    <p class="card-text">A responsive personal portfolio website. My main intention is 
                       to learn bootstrap framework, JSON, and cloud deployment. The last two will be done in the future, 
-                      this will make the project cards as well as experience section dynamic instead of static and manual.
+                      this will make the project cards as well as experience section dynamic instead of static.
                     </p>
-                    <div class="mt-auto text-end">
+                    <div class="mt-auto text-end custom-button">
                       <a href="#" class="btn btn-primary">View Project</a>
                     </div>
                   </div>
@@ -218,7 +201,7 @@
                       updates on course works and assignments, and maintenance of available and new programs through a 
                       user-friendly interface. 
                     </p>
-                    <div class="mt-auto text-end">
+                    <div class="mt-auto text-end custom-button">
                       <a href="#" class="btn btn-primary">View Project</a>
                     </div>
                   </div>
@@ -242,7 +225,7 @@
                       and Lottie to deliver an interactive, theme-based quiz experience with eye candy designs and animation, 
                       a responsive web layout.
                     </p>
-                    <div class="mt-auto text-end">
+                    <div class="mt-auto text-end custom-button">
                       <a href="#" class="btn btn-primary">View Project</a>
                     </div>
                   </div>
@@ -265,7 +248,7 @@
                       Developed using HTML, and CSS to highlight the offered courses, menu items, and enable brand storytelling 
                       through visuals and design. 
                     </p>
-                    <div class="mt-auto text-end">
+                    <div class="mt-auto text-end custom-button">
                       <a href="#" class="btn btn-primary">View Project</a>
                     </div>
                   </div>
@@ -288,7 +271,7 @@
                       multiple patients, each with one or more recorded illnesses, enabling updates to medical conditions, assignment 
                       to doctors, and maintenance of individual patient data through a clean and efficient interface. 
                     </p>
-                    <div class="mt-auto text-end">
+                    <div class="mt-auto text-end custom-button">
                       <a href="#" class="btn btn-primary">View Project</a>
                     </div>
                   </div>
