@@ -11,7 +11,6 @@ const KEY = "david-personal-portfolio";
 
 
     
-// To reset Visits Value
-// Paste This in browser: https://countapi.mileshilliard.com/api/v1/set/your_key?value=100
-// Change the "your_key" to the const KEY (david-personal-portfolio)
-// set the desired value from 100 to 0 
+
+
+// Probably will remove counter in the future, but for now, this is a good way to track the number of visits to the portfolio.

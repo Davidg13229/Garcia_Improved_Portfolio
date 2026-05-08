@@ -14,13 +14,7 @@
     <title>David Garcia - Personal Portfolio </title>
 
     <style>
-    html {
-      scroll-behavior: smooth;
-      scroll-padding-top: 80px;
-    }
-    section {
-      padding: 35px 0;
-    }
+
     </style>
 
   </head>
@@ -29,11 +23,8 @@
     <main>
       <!-- Navbar Section -->
       <nav
-        class="navbar navbar-expand-md bg-body-tertiary fixed-top border-bottom  ">
+        class="navbar navbar-expand-md bg-body-tertiary fixed-top border-bottom custom-navbar">
         <div class="container-xxl">
-          <a href="#Intro" class="navbar-brand mt-1  fw-bold">
-            About Me
-          </a>
           <!-- Hamburger Button To be Inserted-->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navBar"
@@ -46,17 +37,22 @@
           <div
             class="collapse navbar-collapse justify-content-start align-center"
             id="navBar">
-            <ul class="navbar-nav my-2 mb-lg-0">
+            <ul class="navbar-nav my-3 mb-lg-0">
+              <li class="nav-item fw-bold">
+                <a href="#Intro" class="nav-link  fw-bold" title="View About Section">
+                    About Me
+                  </a>
+              </li>
               <li class="nav-item fw-bold">
                 <!--To be Updated Ang Resume -->
                 <a class="nav-link "
-                  href="#Experience">
+                  href="#Experience" title="View Experience Section">
                   Experience
                 </a>
               </li>
               <li class="nav-item fw-bold">
                 <a class="nav-link"
-                  href="#Projects">Projects</a>
+                  href="#Projects" title="View Projects Section">Projects</a>
               </li>
             </ul>
           </div>
@@ -64,34 +60,18 @@
           <div
             class="collapse navbar-collapse justify-content-end align-center"
             id="navBar">
-            <ul class="navbar-nav my-2 mb-lg-0">
-              <li class="nav-item fw-bold d-md-none">
-                <!--To be Updated Ang Resume -->
-                <a class="nav-link"
-                  href="#"
-                  target="_blank">
-                  Resume
-                </a>
-              </li>
-              <li class="nav-item fw-bold ms-2 d-none d-md-inline">
-                <!--To be Updated Ang Resume -->
-                <a class="btn btn-light border border-secondary"
-                  href="#"
-                  target="_blank">
-                  Resume
-                </a>
-              </li>
+            <ul class="navbar-nav my-3 mb-lg-0">
               <li class="nav-item fw-bold">
                 <!--To be inserted Gmail Icon from bootstrap-->
-                <a class="nav-link" href="#">Email</a>
+                <a class="nav-link" href="mailto:davidg13229@gmail.com" title="Send An Email" > <img src="Assets/gmail-logo.png" alt="Email" width="20" height="20"> Email</a>
               </li>
               <li class="nav-item fw-bold">
                 <!--To be inserted LinkedIn Icon from bootstrap-->
-                <a class="nav-link" href="#">LinkedIn</a>
+                <a class="nav-link" href="https://www.linkedin.com/in/david-garcia-5a954b254" title="Go to LinkedIn Profile"target="_blank"> <img src="Assets/linkedin-logo.png" alt="LinkedIn" width="20" height="20"> LinkedIn</a>
               </li>
               <li class="nav-item fw-bold">
                 <!--To be inserted Github Icon from bootstrap-->
-                <a class="nav-link" href="#">Github</a>
+                <a class="nav-link" href="https://github.com/davidg13229" title="Go to Github Profile" target="_blank"> <img src="Assets/github-logo.png" alt="Github" width="20" height="20"> Github</a>
               </li>
             </ul>
           </div>
@@ -99,12 +79,12 @@
       </nav>
 
       <!-- Welcome Section -->
-      <section id="Intro" style="background-color:bisque;">
+      <section id="Intro">
         <div class="container mt-5 ">
           <div class="row justify-content-start">
             <div class="col-md-7 text-center text-md-start">
               <h3>
-                <div class="display-6 "> Hello There Visitor #<span id="visits"></span>,
+                <div class="display-6 "> Hello There Visitor #<span id="visits"></span>
                   <!--CounterAPI to be inserted here-->
                 </div>
               </h3>
@@ -112,15 +92,16 @@
                 <div class="display-2 fw-bold"> I'm <em>David Garcia</em>!
                 </div>
               </h1>
-              <p class="lead mt-3">
+              <p class="lead mt-3 about-description">
                 A 4th year Computer Science student at the
                 Polytechnic University of the Philippines learning Web
                 Development. I wish to develop awesome websites &
                 applications.
               </p>
+              <a href="Assets/Garcia_Resume.docx" download class="btn btn-primary custom-resume-button text-center text-md-start">Download Resume</a>
             </div>
-            <div class="col-md-4  text-center d-none d-md-block">
-              <img src="Assets/Me 2.jpg" class="img-fluid rounded-circle"
+            <div class="col-md-4  text-center d-none d-xl-block profile-container">
+              <img src="Assets/Me 2.jpg" class="img-fluid profile-picture"
                 alt="Profile Picture">
             </div>
           </div>
@@ -129,38 +110,40 @@
         <!--Insert Border Line Before Next Section-->
 
         <!--Work/Internships Section-->
-        <section id="Experience" style="background-color: beige;">
-          <div class="container my-5">
+        <section id="Experience" class="bg-s">
+          <div class="container mb-3">
             <div class="row text-center text-md-start">
               <div class="col-12">
-                <h2 class="display-5 fw-bold mb-4"> <em> Experience &
+                <h2 class="display-5 fw-bold mb-3 section-title"> <em> Experience &
                     Internships</em></h2>
               </div>
             </div>
-            <div class="row text-center text-md-start lh-lg">
-              <div class="col-12">
+            <div class="row text-center text-md-start lh-lg custom-title">
+              <div class="col-12 custom-list">
                 <!-- To be inserted Cerebro Logo as well as their linkedin?-->
                 <ul>
-                  <li>
-                    <div class="h4 my-3 mx-1">Information Technology
+                    <div class="h4 my-3 mx-1 job-title fw-bold">Information Technology
                       Intern |
                       Cerebro, Manila | July 2025 - September 2025
                     </div>
-                    <ul>
                       <li>
-                        <p class="mx-1">Lorem ipsum dolor sit amet
-                          consectetur adipisicing elit. Dolorem libero at
-                          inventore hic eius voluptatem ad ipsa veritatis
-                          deserunt ducimus!</p>
+                        <p class="mx-1">Assisted in managing student, teacher, and parent accounts by 
+                          performing account creation, updates, and troubleshooting for user-related 
+                          issues and data inconsistencies within Cerebro's academic management 
+                          system.</p>
                       </li>
                       <li>
-                        <p class="mx-1">Lorem ipsum dolor sit amet
-                          consectetur adipisicing elit. In consequatur
-                          laudantium beatae voluptates, suscipit reprehenderit
-                          quia veritatis debitis? Vel, molestias!</p>
+                        <p class="mx-1">Managed student account records, study load assignments, and 
+                          parent account generation for multiple partner schools.</p>
                       </li>
-                    </ul>
-                  </li>
+                        <li>
+                        <p class="mx-1">Supported LMS operations by organizing course content and helping 
+                          resolve issues involving corrupted simulation courses within Cerebro’s Moodle platform.</p>
+                      </li>
+                        <li>
+                        <p class="mx-1">Completed Moodle Administration and Moodle Developer certification 
+                          programs to strengthen knowledge in LMS management and operations.</p>
+                      </li>
                 </ul>
               </div>
             </div>
@@ -169,14 +152,15 @@
 
         <!-- Projects Section -->
         <!-- To be Added yung JS & JSON for Dynamic Project Cards With a Horizontal Scroll para hindi hard coded-->
-        <!-- To be Added Hover Effects on Each Individual Card that either Zooms In/Out or Expands Content-->
         <section id="Projects" class="bg-s ">
           <div class="container mb-3">
-            <div
-              class="display-5 text-start fw-bold mb-4">
-              <em>Projects</em>
+            <div class="row text-center text-md-start">
+              <div class="col-12">
+                <h2 class="display-5 fw-bold mb-4 section-title"> <em> Projects
+                    </em></h2>
+              </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="row row-cols-1 row-cols-md-2 g-4 mt-3 mb-5">
               <div class="col">
                 <div class="card h-100">
                   <img src="Assets/Personal_Portfolio.png" class="card-img-top"
@@ -184,17 +168,18 @@
                   <div class="card-body d-flex flex-column mt-3">
                     <h5 class="card-title ">Personal Portfolio (This
                       Project)</h5>
-                      <div>
+                      <div class="custom-pills">
                         <span class="badge rounded-pill bg-primary "> HTML5</span>
                         <span class="badge rounded-pill bg-primary "> CSS</span>
                         <span class="badge rounded-pill bg-primary "> JavaScript</span>
                         <span class="badge rounded-pill bg-primary"> Bootstrap 5</span>  
                       </div>
-                    <p class="card-text">This is a longer card with supporting
-                      text below as a natural lead-in to additional content.
-                      This content is a little bit longer.</p>
-                    <div class="mt-auto text-end">
-                      <a href="#" class="btn btn-primary">View Project</a>
+                    <p class="card-text">A responsive personal portfolio website. My main intention is 
+                      to learn bootstrap framework, JSON, and cloud deployment. The last two will be done in the future, 
+                      this will make the project cards as well as experience section dynamic instead of static.
+                    </p>
+                    <div class="mt-auto text-end custom-button">
+                      <a href="https://github.com/Davidg13229/Garcia_Improved_Portfolio" target="blank" title="View Personal Portfolio" class="btn btn-primary"> <img src="Assets/github-logo.png" alt="Github" width="20" height="20"> <span> View Project</span> </a>
                     </div>
                   </div>
                 </div>
@@ -205,17 +190,21 @@
                     alt="...">
                   <div class="card-body d-flex flex-column mt-3">
                     <h5 class="card-title">E-Learning Platform</h5>
-                      <div>
+                      <div class="custom-pills-learn">
                         <span class="badge rounded-pill bg-primary "> Laravel</span>
                         <span class="badge rounded-pill bg-primary "> PHP</span>
                         <span class="badge rounded-pill bg-primary "> Blade</span>
                         <span class="badge rounded-pill bg-primary"> SQLite</span>  
                       </div>
-                    <p class="card-text">This is a longer card with supporting
-                      text below as a natural lead-in to additional content.
-                      This content is a little bit longer.</p>
-                    <div class="mt-auto text-end">
-                      <a href="#" class="btn btn-primary">View Project</a>
+                    <p class="card-text">A responsive web-based E-Learning Platform with CRUD functionalities and User Role 
+                      Implementation built using HTML and CSS through Blade, and Laravel, with the utilization of SQLite as 
+                      the database of the project. Designed to manage the enrollment of students, assignment of teachers, 
+                      updates on course works and assignments, and maintenance of available and new programs through a 
+                      user-friendly interface. 
+                    </p>
+                    <div class="mt-auto text-end custom-button">
+                      
+                      <a href="https://github.com/Davidg13229/E-Learning-Platform" target="blank" title="View E-Learning Platform" class="btn btn-primary"> <img src="Assets/github-logo.png" alt="Github" width="20" height="20"> <span> View Project</span> </a>
                     </div>
                   </div>
                 </div>
@@ -227,16 +216,19 @@
                     alt="...">
                   <div class="card-body d-flex flex-column mt-3">
                     <h5 class="card-title">Naughty Or Nice</h5>
-                      <div>
+                      <div class="custom-pills">
                         <span class="badge rounded-pill bg-primary "> HTML5</span>
                         <span class="badge rounded-pill bg-primary "> CSS</span>
                         <span class="badge rounded-pill bg-primary "> JavaScript</span>
                         <span class="badge rounded-pill bg-primary"> Bootstrap 5</span>  
-                      </div>
-                    <p class="card-text">This is a longer card with supporting
-                      text below as a natural lead-in to additional content.</p>
-                    <div class="mt-auto text-end">
-                      <a href="#" class="btn btn-primary">View Project</a>
+                      </div> <!-- Change font style/family of card description text-->
+                    <p class="card-text">A front-end web project designed for an enjoyable educational engagement with the 
+                      theme revolving around the Filipino Yuletide culture. This was developed using HTML, CSS, JavaScript,
+                      and Lottie to deliver an interactive, theme-based quiz experience with eye candy designs and animation, 
+                      a responsive web layout.
+                    </p>
+                    <div class="mt-auto text-end custom-button">
+                      <a href="https://github.com/Davidg13229/Naughty-or-Nice" target="blank" title="View Naughty Or Nice Project" class="btn btn-primary"> <img src="Assets/github-logo.png" alt="Github" width="20" height="20"> <span> View Project</span> </a>
                     </div>
                   </div>
                 </div>
@@ -247,17 +239,19 @@
                     alt="...">
                   <div class="card-body d-flex flex-column mt-3">
                     <h5 class="card-title">Bistrovanti Restaurant</h5>
-                      <div>
+                      <div class="custom-pills">
                         <span class="badge rounded-pill bg-primary "> HTML5</span>
                         <span class="badge rounded-pill bg-primary "> CSS</span>
                         <span class="badge rounded-pill bg-primary "> JavaScript</span>
                         <span class="badge rounded-pill bg-primary"> Bootstrap 5</span>  
                       </div>
-                    <p class="card-text">This is a longer card with supporting
-                      text below as a natural lead-in to additional content.
-                      This content is a little bit longer.</p>
-                    <div class="mt-auto text-end">
-                      <a href="#" class="btn btn-primary">View Project</a>
+                    <p class="card-text">A front-end project showcasing responsive web design and proper utilization of UI/UX. 
+                      Bistrovanti features a contemporary blend of culinary traditions across different areas of the world. 
+                      Developed using HTML, and CSS to highlight the offered courses, menu items, and enable brand storytelling 
+                      through visuals and design. 
+                    </p>
+                    <div class="mt-auto text-end custom-button">
+                      <a href="https://github.com/Davidg13229/Restaurant_Website" target="blank" title="View Bistrovanti Project" class="btn btn-primary"> <img src="Assets/github-logo.png" alt="Github" width="20" height="20"> <span> View Project</span> </a>
                     </div>
                   </div>
                 </div>
@@ -268,37 +262,19 @@
                     alt="...">
                   <div class="card-body d-flex flex-column mt-3">
                     <h5 class="card-title">Medi-Vault</h5>
-                      <div>
-                        <span class="badge rounded-pill bg-primary "> HTML5</span>
+                      <div class="custom-pills-vault">
+                        <span class="badge rounded-pill bg-primary"> HTML5</span>
                         <span class="badge rounded-pill bg-primary "> CSS</span>
                         <span class="badge rounded-pill bg-primary "> JavaScript</span>
                         <span class="badge rounded-pill bg-primary"> MySQL</span>  
                       </div>
-                    <p class="card-text">This is a longer card with supporting
-                      text below as a natural lead-in to additional content.
-                      This content is a little bit longer.</p>
-                    <div class="mt-auto text-end">
-                      <a href="#" class="btn btn-primary">View Project</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <img src="Medivault.png" class="card-img-top" alt="...">
-                  <div class="card-body d-flex flex-column mt-3">
-                    <h5 class="card-title">Card title</h5>
-                      <div>
-                        <span class="badge rounded-pill bg-primary "> HTML5</span>
-                        <span class="badge rounded-pill bg-primary "> CSS</span>
-                        <span class="badge rounded-pill bg-primary "> JavaScript</span>
-                        <span class="badge rounded-pill bg-primary"> Bootstrap 5</span>  
-                      </div>
-                    <p class="card-text">This is a longer card with supporting
-                      text below as a natural lead-in to additional content.
-                      This content is a little bit longer.</p>
-                    <div class="mt-auto text-end">
-                      <a href="#" class="btn btn-primary">View Project</a>
+                    <p class="card-text">A responsive, web-based patient management system with CRUD functionalities and role-based 
+                      access control. Built using HTML, CSS, and JavaScript, with MySQL as the database. It is designed to manage 
+                      multiple patients, each with one or more recorded illnesses, enabling updates to medical conditions, assignment 
+                      to doctors, and maintenance of individual patient data through a clean and efficient interface. 
+                    </p>
+                    <div class="mt-auto text-end custom-button">
+                      <a href="https://github.com/Davidg13229/Medivault_Remade" target="blank" title="View Medi-Vault Project" class="btn btn-primary"> <img src="Assets/github-logo.png" alt="Github" width="20" height="20"> <span> View Project</span> </a>
                     </div>
                   </div>
                 </div>
