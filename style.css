@@ -1,26 +1,57 @@
 html {
       scroll-behavior: smooth;
-      scroll-padding-top: 80px;
+      scroll-padding-top: 60px;
 }
-    
+
+body{
+   background-color:  #F5F5DC;
+}
+
+.custom-navbar {
+      background-color: #F4A460 !important;
+}
+
+.custom-navbar li  {
+      transition: background 0.4s ease, transform 0.4s ease;
+      border-radius: 12px;
+      padding: 0 8px;
+}
+
+.custom-navbar li:hover {
+     background: linear-gradient(45deg, #f7971e, #ff6a88);
+     transform: translateY(-4px);
+}
+
+.profile-container {
+      margin-left: 60px;
+}
+
+.profile-picture {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #F5F5DC;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+
+}
+
 #Intro{
       padding: 65px 0 65px 0;
 }
 
 section {
-      padding: 35px 0 0 0 ;
+      padding: 30px 0 0 0 ;
 }
 
 .section-title{
    text-align: center;
-   padding: 30px 0 30px 0;
+   padding: 30px 0 0px 0;
 
 }
 
 .welcome-section {
    padding: 30px;
-
-
 }
 
 .welcome-section h3 {
@@ -33,11 +64,9 @@ section {
     padding-bottom: 3px;
 }
 
-.custom-list li:nth-child(1)::marker {
-   font-size: 3rem;
-}
-.custom-list li:not(:first-child)::marker {
-   font-size: 1.5rem;
+
+.custom-list li {
+   margin-left: 50px;
 }
 
 
@@ -69,7 +98,7 @@ section {
    background-color: rgb(0, 0, 0) !important;
    color: rgb(255, 255, 255) !important;
    border-color: black !important;
-   margin: 20px 0 0 0;
+   margin: 65px 0 0 0;
    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
@@ -105,7 +134,7 @@ section {
    color: #f1f1f1;
 }
 .custom-pills span:nth-child(2) {
-   background-color: #64de4 !important;
+   background-color: #264de4 !important;
    padding: 5px 15px;
    font-size: 12px;
 }
@@ -128,7 +157,7 @@ section {
    font-size: 12px;
 }
 .custom-pills-vault span:nth-child(2) {
-   background-color: #64de4 !important;
+   background-color: #264de4 !important;
    padding: 5px 15px;
    font-size: 12px;
 }
@@ -149,10 +178,9 @@ section {
    background-color: #FF2D20 !important;
    padding: 5px 10px;
    font-size: 12px;
-   color:
 }
 .custom-pills-learn span:nth-child(2) {
-   background-color: #64de4 !important;
+   background-color: #264de4 !important;
    padding: 5px 15px;
    font-size: 12px;
 }
