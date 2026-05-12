@@ -194,3 +194,22 @@ section {
    padding: 5px 10px;
    font-size: 12px;
 }
+
+#backtotop-btn {
+   border-radius: 8px;
+   border : 1px solid black;
+   right: 30px;
+   bottom: 30px;
+   cursor: pointer;
+   font-size: 18px;
+   font-weight: bold;
+   z-index: 9999;
+   position: fixed;
+
+}
+
+#backtotop-btn:hover {
+   background-color: rgb(54, 51, 51) !important;
+   color: white !important;
+   border-color: rgb(54, 51, 51) !important;
+}
